@@ -17,3 +17,8 @@ body {
 	color: #000866
 }
 
+::selection, ::-moz-selection {
+	background: #3344FF;
+	color: white
+}
+
