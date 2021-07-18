@@ -1,0 +1,106 @@
+
+.webwiskee ::selection {
+	background-color: #344860;
+	color: white
+}
+
+.webwiskee .about-content * {
+    z-index: 1
+}
+.webwiskee .project-content {	
+	background-color: #d55c21;
+	font-family: 'Montserrat'
+}
+.webwiskee h2, .webwiskee h1 {
+	font-family: 'Norwester';
+	color: white;
+	text-shadow: 1px 3px 2px #343a42;
+	text-transform: uppercase;
+}
+.webwiskee h2 {
+    font-size: 1.8rem
+}
+.webwiskee img {
+	max-width: 10vw
+}
+@media (max-width: 991px){
+	.webwiskee img {
+		max-width: max(5rem, 35%)
+	}
+}
+.webwiskee .btn-primary {
+	border: none;
+	background-color: #344860;
+	border-radius: 0px;
+	color: white;
+	transition: 0.3s;
+	padding: 0.75rem 1rem 0.75rem 1rem;
+    font-style: unset;
+}
+.webwiskee .btn-primary:hover {
+	background-color: white;
+	color: #344860
+}
+.webwiskee .watermark {
+	position: absolute;
+	right: -11%;
+	bottom: -11%;
+	width: 20rem;
+	max-width: unset
+}
+.webwiskee .about-content .watermark {
+    position: absolute;
+	left: -21%;
+	bottom: -21%;
+	width: 30rem;
+	max-width: unset;
+    z-index: 0
+}
+
+
+.webwiskee ::selection, .webwiskee ::-moz-selection {
+	background: #344860;
+	color: #fff
+}
+body.webwiskee {
+	background-color: #fff;
+	font-family: 'Montserrat';
+	color: white;
+	background-image: url("../images/broken-noise.png");
+}
+.webwiskee h1 {
+	color: #fff;
+    font-family: "Norwester"
+}
+.webwiskee a:not(.icon, .btn) {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    margin-right: auto;
+    font-weight: 700
+}
+.webwiskee a:not(.icon, .btn):hover {
+    border-bottom: 3px solid #344860
+}
+.webwiskee .about-content h3 {
+	color: #f9d9ac
+}
+.webwiskee .icon {
+	fill: #fff;
+	transition: 0.3s;
+	height: 3rem;
+	width: 3rem;
+	padding-right: 1rem;
+}
+.webwiskee .icon:hover {
+	fill: #344860
+}
+.webwiskee .about-content {
+	background-color: #d55c21;
+    font-weight: 800
+}
+
+.webwiskee .overlay {
+    background-color: rgb(52,72,96, 0.6)
+}

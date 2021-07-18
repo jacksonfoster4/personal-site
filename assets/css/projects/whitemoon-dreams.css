@@ -1,0 +1,104 @@
+
+.whitemoon-dreams ::selection {
+	background-color: #CCA9FF;
+}
+.whitemoon-dreams .project-container {
+	background-color: rgb(38, 39, 55);
+	background-image: url("../../images/wmd/wmd-splash.png");
+	background-size: cover;
+	position: relative;
+}
+.whitemoon-dreams .project-content {
+	z-index: 1;
+	font-family: 'Exo';
+}
+.whitemoon-dreams .gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 69%); 
+}
+
+.whitemoon-dreams h2 {
+	font-family: 'Exo';
+	color: white;
+	font-weight: 600;
+	font-size: 1.8rem
+}
+
+.whitemoon-dreams img {
+	max-width: 6vw
+}
+@media (max-width: 991px){
+	.whitemoon-dreams img {
+		max-width: max(5rem, 15%)
+	}
+}
+.whitemoon-dreams .btn-primary {
+	transform: skew(-10deg);
+	background-color: rgb(204, 169, 255);
+	color: rgb(48, 41, 119);
+	transition: 0.3s;
+	border-radius: 0px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: unset;
+	padding: 0.75rem 1rem 0.75rem 1rem;
+}
+.whitemoon-dreams .btn-primary:hover {
+	transform: skew(0deg);
+	background-color: rgb(146, 245, 248);
+	color: rgb(48, 41, 119)
+}
+
+
+.whitemoon-dreams ::selection, .whitemoon-dreams ::-moz-selection {
+	background: rgb(204, 169, 255);
+	color: rgb(48, 41, 119);
+}
+body.whitemoon-dreams {
+	background-color: rgb(52, 53, 73);
+	font-family: 'Exo';
+	color: #fff;
+}
+.whitemoon-dreams h1 {
+	color: #fff;
+    font-family: "Exo";
+    font-weight: 600
+}
+.whitemoon-dreams a:not(.icon, .btn) {
+    text-decoration: none;
+	color: rgb(204, 169, 255);
+    transition: 0.3s;
+    margin-right: auto;
+    border-bottom: 3px solid transparent;
+	font-weight: 500;
+}
+.whitemoon-dreams a:not(.icon, .btn):hover {
+   border-bottom: 3px solid rgb(146, 245, 248)
+}
+.whitemoon-dreams .about-content h3 {
+	color: #f9d9ac
+}
+.whitemoon-dreams .icon {
+	fill: rgb(146, 245, 248);
+	transition: 0.3s;
+	height: 3rem;
+	width: 3rem;
+	padding-right: 1rem;
+}
+.whitemoon-dreams .icon:hover {
+	fill: rgb(204, 169, 255);
+}
+.whitemoon-dreams .about-content {
+	background-color: rgb(38, 39, 55);
+    font-weight: 300
+}
+.before-banner {
+	background-color: rgb(204, 169, 255);
+	color: rgb(52, 53, 73);
+	font-weight: 500;
+	font-size: 1rem
+}

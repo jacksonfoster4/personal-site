@@ -1,25 +1,189 @@
-@font-face {
-	font-family: 'Vollkorn';
-	src: url('../fonts/Vollkorn-Italic.ttf')  format('truetype')
-}
+@import url("./fonts.css");
+@import url("./bootstrap/bootstrap.min.css");
+@import url("./animate.min.css");
+
 body {
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #eeeee4;
-	background-color: #eeeee4;
-	background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
-	font-family: 'Vollkorn', serif;
-	font-weight: 800;
-	font-display: swap;
-	text-align: center;
-	font-size: 5rem;
-	color: #000866
+}
+.btn {
+	border: none;
+	margin-right: auto;
+}
+.btn:focus {
+	box-shadow: none
 }
 
-::selection, ::-moz-selection {
-	background: #3344FF;
+h1 {
+	font-weight: 800;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem
+}
+
+.projects {
+	position: relative
+}
+.project-content {
+	padding: 2rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.project-description {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: end;
+	z-index: 1;
+}
+
+.project-container {
+	position: relative;
+}
+
+img {
+	padding-bottom: 1.5rem
+}
+
+.project-content, .project-container, .about-content {
+	height: 100%;
+	border-radius: 20px;
+}
+.overlay {
+	border-radius: 20px;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+.icons {
+	display: flex;
+	height: 100%;
+	align-items: end;
+}
+
+
+.home ::selection, .home ::-moz-selection {
+	background: #FFF59A;
+	color: #010028
+}
+body.home {
+	background-color: #03004b;
+	font-family: 'Josefin Sans';
+	color: white;
+	background-color: #03004b;
+	z-index: 0
+}
+.home h1 {
+	color: #fff
+}
+.home .about-content h3 {
+	color: #FFF59A
+}
+.home .btn-primary {
+	background-color: #FFF59A;
+	color: #010028;
+	font-style: italic;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+.home .btn-primary:hover {
+	background-color: white;
+}
+.home .icon {
+	fill: #FFF59A;
+	transition: 0.3s;
+	height: 3rem;
+	width: 3rem;
+	padding-right: 1rem;
+}
+.home .icon:hover {
+	fill: white
+}
+.home .about-content {
+	background-color: #010028;
+}
+
+.gallery-item {
+	background-size:cover;
+	height: 100%;
+	border-radius: 20px !important;
+	background-position: top;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.gallery-item .overlay {
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 100%;
+	width:100%;
+	background-color: rgba(0,0,0,0.5)
+}
+.gallery-item h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem !important;
+	text-align: center
+}
+.lightbox .modal-dialog {
+	width: 100%;
+	margin: 0;
+	max-width: unset;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem
+}
+.lightbox .modal-dialog img {
+	max-width: unset !important;
+	width: 70%
+}
+.before-banner {
+	position: absolute;
+	transform: rotate(-45deg);
+	left: -2.5rem;
+	top: 3%;
+	font-size: 1.5rem;
+	padding: 0rem 3rem 0rem 3rem;
+	z-index: 1
+}
+
+#contact .modal-dialog {
+	transform: translateY(-50%) !important;
+	top: 50%
+}
+
+#contact .modal-content {
+	background-color: #010028;
+	padding: 1.3rem;
+	border-radius: 20px
+}
+.modal-header, .modal-footer {
+	border: none
+}
+#contact input, #contact textarea {
+	background-color: #232247;
+	border: none;
 	color: white
 }
-
+#contact input:focus, #contact textarea:focus {
+	box-shadow: 0 0 0 .15rem #FFF59A;
+}
+#contact .close-modal {
+	cursor: pointer;
+	fill: #FFF59A;
+	transition: 0.3s;
+}
+#contact .close-modal:hover {
+	cursor: pointer;
+	fill: #fff;
+}

@@ -1,0 +1,103 @@
+.the-foundation-works ::selection {
+	background-color: #c00000;
+	color: white
+}
+.the-foundation-works .project-container, .the-foundation-works .about-content {
+	background-image: url("../../images/tfw/seismograph.png");
+	background-size: contain;
+	background-repeat: repeat-x;
+	background-position: center center;
+	background-color: black;
+}
+.about-content {
+    z-index: 1;
+}
+.the-foundation-works .project-content {
+	background-color: none;
+	z-index: 1;
+	font-family: 'Raleway';
+	font-weight: 500;
+}
+.the-foundation-works h2 {
+	font-family: 'Contrail One';
+	color: white;
+	text-shadow: 1px 3px 2px #343a42;
+	font-size: 1.8rem;
+}
+.the-foundation-works img {
+	max-width: 6vw
+}
+@media (max-width: 991px){
+	.the-foundation-works img {
+		max-width: max(5rem, 15%)
+	}
+}
+.the-foundation-works .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.5)
+}
+.the-foundation-works .btn-primary {
+	border: none;
+	border-radius: 0;
+	background-color: #c00000;
+	color: white;
+	font-family: "Roboto Slab";
+	transition: 0.3s;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 0.75rem 1rem 0.75rem 1rem;
+    font-style: unset;
+}
+.the-foundation-works .btn-primary:hover {
+	transform: skew(-10deg);
+	background-color: #f9d9ac;
+	color: black
+}
+
+.the-foundation-works ::selection, .the-foundation-works ::-moz-selection {
+	background: #c00000;
+	color: #fff
+}
+body.the-foundation-works {
+	background-color: rgb(17, 17, 17);
+	font-family: 'Contrail One';
+	color: white;
+	background-image: url("../../images/broken-noise.png");
+}
+.the-foundation-works h1 {
+	color: #fff
+}
+.the-foundation-works a {
+    text-decoration: none;
+    color: #f9d9ac;
+    transition: 0.3s
+}
+.the-foundation-works a:hover {
+    color: #c00000
+}
+.the-foundation-works .about-content h3 {
+	color: #f9d9ac
+}
+.the-foundation-works .icon {
+	fill: #f9d9ac;
+	transition: 0.3s;
+	height: 3rem;
+	width: 3rem;
+	padding-right: 1rem;
+}
+.the-foundation-works .icon:hover {
+	fill: #c00000
+}
+.the-foundation-works .about-content {
+	background-color: #000;
+}
+.before-banner {
+    background-color: #000;
+    color: #f9d9ac;
+}
