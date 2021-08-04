@@ -122,19 +122,19 @@
 							<div style="display: none;"><label>Don’t fill this out if you’re human: <input type="text" name="bot-field" /></label></div>
 							<div class="mb-3">
 								<label for="name" class="form-label">Name</label>
-								<input required type="text" class="form-control" id="name" placeholder="Your Name" aria-describedby="name">
+								<input required name="name" type="text" class="form-control" id="name" placeholder="Your Name" aria-describedby="name">
 							  </div>
 							<div class="mb-3">
 							  <label for="inputEmail" class="form-label">Email address</label>
-							  <input required type="email" placeholder="johndoe@email.com" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+							  <input required name="email"type="email" placeholder="johndoe@email.com" class="form-control" id="inputEmail" aria-describedby="emailHelp">
 							</div>
 							<div class="mb-3">
 							  <label for="inputReferral" class="form-label">How did you hear about me?</label>
-							  <input required type="text"  placeholder="Did anyone refer you?"class="form-control" id="inputReferral">
+							  <input required name="referral"type="text" placeholder="Did anyone refer you?" class="form-control" id="inputReferral">
 							</div>
 							<div class="mb-3">
-								<label for="inputReferral" class="form-label">How can I help?</label>
-								<textarea required class="form-control" placeholder="I need a website..." id="inputReferral"></textarea>
+								<label for="inputMessage" class="form-label">How can I help?</label>
+								<textarea name="message"required class="form-control" placeholder="I need a website..." id="inputMessage"></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						  </form>
