@@ -1,9 +1,4 @@
 
-.webwiskee ::selection {
-	background-color: #344860;
-	color: white
-}
-
 .webwiskee .about-content * {
     z-index: 1
 }
@@ -18,7 +13,7 @@
 	text-transform: uppercase;
 }
 .webwiskee h2 {
-    font-size: 1.8rem
+
 }
 .webwiskee img {
 	max-width: 10vw
@@ -36,6 +31,7 @@
 	transition: 0.3s;
 	padding: 0.75rem 1rem 0.75rem 1rem;
     font-style: unset;
+	border: 3px solid #344860
 }
 .webwiskee .btn-primary:hover {
 	background-color: white;
@@ -59,7 +55,7 @@
 
 
 .webwiskee ::selection, .webwiskee ::-moz-selection {
-	background: #344860;
+	background: #344860f1;
 	color: #fff
 }
 body.webwiskee {
@@ -103,4 +99,49 @@ body.webwiskee {
 
 .webwiskee .overlay {
     background-color: rgb(52,72,96, 0.6)
+}
+
+.webwiskee #contact .modal-dialog {
+	transform: translateY(-50%) !important;
+	top: 50%
+}
+
+.webwiskee #contact .modal-content {
+	background-color: white;
+	color: #232247;
+	padding: 1.3rem;
+	border-radius: 20px
+}
+.webwiskee #contact h5 {
+	font-family: "Norwester";
+	color: #232247;
+	text-transform: uppercase;
+	font-size: 1.6rem
+}
+
+.webwiskee #contact input, .webwiskee #contact textarea {
+	background-color: #f3f3f3;
+	border: none;
+	color: #232247;
+	transition: 0.3s;
+}
+.webwiskee #contact input:focus, .webwiskee #contact textarea:focus {
+	box-shadow: 0 0 0 .15rem #d55c21;
+}
+.webwiskee #contact .close-modal {
+	cursor: pointer;
+	fill: #d55c21;
+	transition: 0.3s;
+}
+.webwiskee #contact .close-modal:hover {
+	cursor: pointer;
+	fill: #232247;
+}
+.webwiskee #contact .btn-primary {
+	background-color: #d55c21;
+	border: 3px solid #d55c21
+}
+.webwiskee #contact .btn-primary:hover {
+	background-color: white;
+	color: #232247
 }

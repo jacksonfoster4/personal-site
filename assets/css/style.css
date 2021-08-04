@@ -18,8 +18,27 @@ h1 {
 	font-size: 3rem;
 }
 
-h2 {
-	font-size: 2.5rem
+p, li {
+	font-weight: 600
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none; /* Remove default bullets */
+}
+
+ul li {
+	margin-bottom: 5px
+}
+ul li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+	margin-top: -1px;
+	position: absolute;
 }
 
 .projects {
@@ -47,6 +66,15 @@ h2 {
 img {
 	padding-bottom: 1.5rem
 }
+@media (max-width: 991px){
+	img.logo {
+		padding-bottom: 1.5rem;
+		height: 8rem;
+		width: auto;
+		max-width: 100% !important;
+		margin-right: auto;
+	}
+}
 
 .project-content, .project-container, .about-content {
 	height: 100%;
@@ -61,6 +89,8 @@ img {
 	flex-direction: column;
 	position: relative;
 	overflow: hidden;
+	line-height: 2;
+	font-size: 1.2rem
 }
 .icons {
 	display: flex;
@@ -68,7 +98,49 @@ img {
 	align-items: end;
 }
 
+/* this styles the text when aspect ratio is between 8/5 and 3/2 */
+@media (min-width: 992px) {
+	.projects * {
+		font-size: min(1.5vw, 1.6vh);
+	  }
+	h1, h2, h1 span, h2 span {
+		font-size: min(2vw, 4vh);
+	}
+}
+@media (min-aspect-ratio: 8/5) {
+	.projects * {
+	  font-size: min(1.5vw, 1.6vh);
+	}
+	.projects h1, .projects h2, .projects h1 span, .projects h2 span {
+		font-size: min(2vw, 3.7vh);
+	}
+}
+@media (max-aspect-ratio: 3/2) {
+	.projects * {
+	  font-size: min(1vw, 1.4vh);
+	}
+	.projects h1, .projects h2, .projects h1 span, .projects h2 span {
+		font-size: 2.5rem
+	}
+}
+@media (max-width: 992px){
+	.projects * {
+		font-size: 1rem;
+	  }
+	.projects h1, .projects h2, .projects h1 span, .projects h2 span {
+		  font-size: 2.5rem;
+	}
+	.about-content p, .about-content li {
+		font-size: 1rem !important
+	}
+}
 
+
+
+
+img::selection, img::-moz-selection {
+	background: none !important;
+}
 .home ::selection, .home ::-moz-selection {
 	background: #FFF59A;
 	color: #010028
@@ -78,10 +150,24 @@ body.home {
 	font-family: 'Josefin Sans';
 	color: white;
 	background-color: #03004b;
-	z-index: 0
+	z-index: 0;
+	font-size: 0.8vw
+}
+@media (max-width: 991px){
+	body.home {
+		font-size: 2vh
+	}
 }
 .home h1 {
-	color: #fff
+	color: #fff;
+	font-size: 2.7rem;
+}
+.home li:before {
+	color: #FFF59A; /* Change the color */
+
+}
+.home .about-content p, .home .about-content li {
+	font-size: 1.2rem
 }
 .home .about-content h3 {
 	color: #FFF59A
@@ -92,6 +178,9 @@ body.home {
 	font-style: italic;
 	border-radius: 2px;
 	transition: 0.3s;
+}
+.home .about-content .btn {
+	font-size: 1.3rem;
 }
 .home .btn-primary:hover {
 	background-color: white;
@@ -109,6 +198,13 @@ body.home {
 .home .about-content {
 	background-color: #010028;
 }
+
+@media (max-width: 991px){
+	.projects row {
+		padding-bottom: 2rem
+	}
+}
+
 
 .gallery-item {
 	background-size:cover;
@@ -151,11 +247,12 @@ body.home {
 	position: absolute;
 	transform: rotate(-45deg);
 	left: -2.5rem;
-	top: 3%;
+	top: 1.3rem;
 	font-size: 1.5rem;
 	padding: 0rem 3rem 0rem 3rem;
 	z-index: 1
 }
+
 
 #contact .modal-dialog {
 	transform: translateY(-50%) !important;

@@ -1,7 +1,4 @@
 
-.whitemoon-dreams ::selection {
-	background-color: #CCA9FF;
-}
 .whitemoon-dreams .project-container {
 	background-color: rgb(38, 39, 55);
 	background-image: url("../../images/wmd/wmd-splash.png");
@@ -18,14 +15,15 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 69%); 
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 89%); 
+	border-radius: 20px;
 }
 
 .whitemoon-dreams h2 {
 	font-family: 'Exo';
 	color: white;
 	font-weight: 600;
-	font-size: 1.8rem
+
 }
 
 .whitemoon-dreams img {
@@ -55,8 +53,8 @@
 
 
 .whitemoon-dreams ::selection, .whitemoon-dreams ::-moz-selection {
-	background: rgb(204, 169, 255);
-	color: rgb(48, 41, 119);
+	background: rgb(48, 41, 119, 0.9);
+	color: #fff
 }
 body.whitemoon-dreams {
 	background-color: rgb(52, 53, 73);
@@ -100,5 +98,47 @@ body.whitemoon-dreams {
 	background-color: rgb(204, 169, 255);
 	color: rgb(52, 53, 73);
 	font-weight: 500;
-	font-size: 1rem
+	font-size: 1.2rem
+}
+
+
+.whitemoon-dreams #contact .modal-dialog {
+	transform: translateY(-50%) !important;
+	top: 50%
+}
+
+.whitemoon-dreams #contact .modal-content {
+	background-color: rgb(38, 39, 55);
+	color: white;
+	padding: 1.3rem;
+	border-radius: 20px
+}
+.whitemoon-dreams #contact h5 {
+	font-family: "Exo";
+	color: white;
+	font-size: 1.6rem;
+	font-weight: 700
+}
+
+.whitemoon-dreams #contact input, .whitemoon-dreams #contact textarea {
+	background-color: rgb(89, 91, 116);
+	border: none;
+	color: white;
+	transition: 0.3s;
+}
+.whitemoon-dreams #contact input:focus, .whitemoon-dreams #contact textarea:focus {
+	box-shadow: 0 0 0 .15rem rgb(146, 245, 248);
+}
+.whitemoon-dreams input::placeholder, .whitemoon-dreams textarea::placeholder {
+	color: rgba(255, 255, 255, 0.616);
+
+}
+.whitemoon-dreams #contact .close-modal {
+	cursor: pointer;
+	fill: rgb(204, 169, 255);
+	transition: 0.3s;
+}
+.whitemoon-dreams #contact .close-modal:hover {
+	cursor: pointer;
+	fill: rgb(146, 245, 248);
 }

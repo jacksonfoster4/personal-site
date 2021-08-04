@@ -1,9 +1,9 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="../../assets/css/style.css" rel="stylesheet"></link>
-        <link href="../../assets/css/projects/whitemoon-dreams.css" rel="stylesheet"></link>
-
+		<link href="../assets/css/style.css" rel="stylesheet"></link>
+        <link href="../assets/css/projects/whitemoon-dreams.css" rel="stylesheet"></link>
+		<link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
 		<title>Jackson Foster | WhiteMoon Dreams</title>
 	</head>
 	<body class="whitemoon-dreams">
@@ -14,10 +14,16 @@
                         <a class="mb-4" href="../index.html">Back To Home</a>
 						<h1>WhiteMoon Dreams</h1>
 						<p>
-							I'm a digital designer with five years of experience in uncovering user insights and designing solutions to accomodate them!
-							In the feed you'll find a few cases detailing various methodologies and processes.
+							WhiteMoon Dreams came to me in need of a new website to better present
+							their portfolio, while also enabling them to share blog posts and other content 
+							about the video game industry. 
 						</p>
-						<button class="btn btn-primary">Contact Me</button><br>
+                        <p>
+                            I had the chance to work closely with the creative team
+                            in designing and developing their website. The WhiteMoon Dreams brand had evolved several times over
+                            the years and they needed to revamp their online presence to suit the growth that the business had seen. 
+                        </p>
+						<button data-bs-toggle="modal" data-bs-target="#contact" class="btn btn-primary">Contact Me</button><br>
 						<div class="icons mt-3">
 							<a target="_blank" class="icon linkedin" href="https://www.linkedin.com/in/jackson-w-foster/">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
@@ -100,6 +106,40 @@
                         </div>
                     </div>
 
+				</div>
+			</div>
+            <div class="modal contact fade" id="contact" tabindex="-1" aria-labelledby="contact" aria-hidden="true">
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+						<div class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						<form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+							<div style="display: none;"><label>Don’t fill this out if you’re human: <input type="text" name="bot-field" /></label></div>
+							<div class="mb-3">
+								<label for="name" class="form-label">Name</label>
+								<input required type="text" class="form-control" id="name" placeholder="Your Name" aria-describedby="name">
+							  </div>
+							<div class="mb-3">
+							  <label for="inputEmail" class="form-label">Email address</label>
+							  <input required type="email" placeholder="johndoe@email.com" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+							</div>
+							<div class="mb-3">
+							  <label for="inputReferral" class="form-label">How did you hear about me?</label>
+							  <input required type="text"  placeholder="Did anyone refer you?"class="form-control" id="inputReferral">
+							</div>
+							<div class="mb-3">
+								<label for="inputReferral" class="form-label">How can I help?</label>
+								<textarea required class="form-control" placeholder="I need a website..." id="inputReferral"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						  </form>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>

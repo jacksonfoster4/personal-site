@@ -10,7 +10,6 @@
 	background-color: black;
 }
 .about-content {
-    z-index: 1;
 }
 .the-foundation-works .project-content {
 	background-color: none;
@@ -22,7 +21,6 @@
 	font-family: 'Contrail One';
 	color: white;
 	text-shadow: 1px 3px 2px #343a42;
-	font-size: 1.8rem;
 }
 .the-foundation-works img {
 	max-width: 6vw
@@ -61,7 +59,7 @@
 }
 
 .the-foundation-works ::selection, .the-foundation-works ::-moz-selection {
-	background: #c00000;
+	background: #c00000ef;
 	color: #fff
 }
 body.the-foundation-works {
@@ -97,7 +95,52 @@ body.the-foundation-works {
 .the-foundation-works .about-content {
 	background-color: #000;
 }
+.the-foundation-works .about-content p {
+	font-family: 'Raleway';
+	font-weight: 600;
+}
+.the-foundation-works .about-content p, .the-foundation-works .about-content h1, .the-foundation-works .about-content a, .the-foundation-works .about-content button {
+	z-index: 5;
+}
 .before-banner {
     background-color: #000;
     color: #f9d9ac;
+}
+
+
+.the-foundation-works #contact .modal-dialog {
+	transform: translateY(-50%) !important;
+	top: 50%
+}
+
+.the-foundation-works #contact .modal-content {
+	background-color: black;
+	color: white;
+	padding: 1.3rem;
+	border-radius: 20px
+}
+.the-foundation-works #contact h5 {
+	font-family: "Contrail One";
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.6rem
+}
+
+.the-foundation-works #contact input, .the-foundation-works #contact textarea {
+	background-color: rgb(49, 49, 49);;
+	border: none;
+	color: white;
+	transition: 0.3s;
+}
+.the-foundation-works #contact input:focus, .the-foundation-works #contact textarea:focus {
+	box-shadow: 0 0 0 .15rem #f9d9ac;
+}
+.the-foundation-works #contact .close-modal {
+	cursor: pointer;
+	fill: #f9d9ac;
+	transition: 0.3s;
+}
+.the-foundation-works #contact .close-modal:hover {
+	cursor: pointer;
+	fill: #c00000;
 }
