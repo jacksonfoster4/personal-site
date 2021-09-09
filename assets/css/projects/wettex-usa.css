@@ -37,6 +37,9 @@
 	.wettex-usa img {
 		max-width: max(5rem, 35%)
 	}
+	.wettex-usa img.logo {
+		height: auto
+	}
 }
 
 .wettex-usa ::selection, .wettex-usa ::-moz-selection {
