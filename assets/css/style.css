@@ -163,8 +163,7 @@ body.home {
 	font-size: 2.7rem;
 }
 .home li:before {
-	color: #FFF59A; /* Change the color */
-
+	color: #FFF59A;
 }
 .home .about-content p, .home .about-content li {
 	font-size: 1.2rem
