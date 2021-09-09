@@ -1,65 +1,63 @@
 @font-face {
 	font-family: 'Vollkorn';
 	src: url('../fonts/Vollkorn-Italic.ttf')  format('truetype');
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: 'Norwester';
 	src: url('../fonts/norwester/Norwester.woff2') format('woff2');
-	font-display: swap
 }
 
 @font-face {
 	font-family: "Contrail One";
 	src: url('../fonts/contrail-one/ContrailOne.ttf');
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Work Sans";
 	src: url('../fonts/work-sans/WorkSans-VariableFont_wght.ttf') format('truetype');
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Work Sans Italic";
 	src: url('../fonts/work-sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Exo";
 	src: url("../fonts/exo/Exo-VariableFont_wght.ttf") format("truetype");
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Josefin Sans";
 	src: url("../fonts/josefin-sans/JosefinSans-VariableFont_wght.ttf") format('truetype');
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Raleway";
 	src: url("../fonts/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Montserrat";
 	src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Roboto Slab";
 	src: url("../fonts/roboto-slab/RobotoSlab-VariableFont_wght.ttf") format("truetype");
-	font-display: swap;
+	
 }
 
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/roboto/Roboto-Bold.ttf");
-	font-display: swap
 }
