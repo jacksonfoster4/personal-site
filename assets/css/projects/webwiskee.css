@@ -21,6 +21,11 @@
 		max-width: max(5rem, 35%)
 	}
 }
+@media (min-width: 991px) {
+	.webwiskee .about-content {
+		overflow: hidden
+	}
+}
 .webwiskee .btn-primary {
 	border: none;
 	background-color: #344860;
