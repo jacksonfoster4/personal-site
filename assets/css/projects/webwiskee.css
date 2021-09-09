@@ -12,9 +12,7 @@
 	text-shadow: 1px 3px 2px #343a42;
 	text-transform: uppercase;
 }
-.webwiskee h2 {
 
-}
 .webwiskee img {
 	max-width: 10vw
 }
@@ -55,7 +53,10 @@
 
 .webwiskee li:before {
 	color: #344860; 
-	font-wweight: 800
+}
+
+.webwiskee .about-content p, .webwiskee .about-content li {
+	font-size: 1rem
 }
 
 .webwiskee ::selection, .webwiskee ::-moz-selection {
