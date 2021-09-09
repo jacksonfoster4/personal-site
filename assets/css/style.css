@@ -89,7 +89,8 @@ img {
 	flex-direction: column;
 	position: relative;
 	line-height: 2;
-	font-size: 1.2rem
+	font-size: 1.2rem;
+	overflow: hidden;
 }
 .icons {
 	display: flex;
