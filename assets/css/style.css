@@ -201,6 +201,9 @@ body.home {
 	.projects row {
 		padding-bottom: 2rem
 	}
+	.about-content {
+		height: auto
+	}
 }
 
 
